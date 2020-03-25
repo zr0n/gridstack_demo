@@ -13,20 +13,31 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.min.css" />
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body onload="GridStack.init()">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="grid-stack">
+    <div class="grid-stack-item">
+      <div class="grid-stack-item-content">Item 1</div>
+    </div>
+    <div class="grid-stack-item" data-gs-width="2">
+      <div class="grid-stack-item-content">Item 2 wider</div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  </script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.all.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
